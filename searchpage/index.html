@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="navbar-brand">
+                logo
+            </div>
+            <div id="link-group" class="link-group">
+                <ul>
+                    <li class="nav-link"><a href=""><span class="material-icons">home</span>Home</a></li>
+                    <li class="nav-link"><a href=""><span class="material-icons">info</span>About</a></li>
+                    <li class="nav-link"><a href=""><span class="material-icons">article</span>Work</a></li>
+                    <li class="nav-link"><a href=""><span class="material-icons">photo_library</span>Gallery</a></li>
+                    <li class="nav-link"><a href=""><span class="material-icons">contacts</span>Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-btn">
+                <span onclick="menuOpen();" id="open" class="material-icons open">menu</span>
+                <span onclick="menuClose();" id="close" c class="material-icons close">close</span>
+            </div>
+        </div>
+
+
+        <div class="bravo-form-search-all"
+            style="background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('https://bookingfleet.com/BookingFleet/public/uploads/demo/general/home-mix.jpg') !important">
+            <div class="search-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="g-form-control">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="bravo_hotel">
+                                    <a href="#bravo_hotel" class=" active " aria-controls="bravo_hotel" role="tab"
+                                        data-toggle="tab">
+                                        <i class="fa fa-building-o"></i>
+                                        Hotels
+                                    </a>
+                                </li>
+                                <li role="bravo_car">
+                                    <a href="#bravo_car" class="" aria-controls="bravo_car" role="tab"
+                                        data-toggle="tab">
+                                        <i class="icofont-car"></i>
+                                        Car Rentals
+                                    </a>
+                                </li>
+                                <li role="bravo_tour">
+                                    <a href="#bravo_tour" class="" aria-controls="bravo_tour" role="tab"
+                                        data-toggle="tab">
+                                        <i class="icofont-island-alt"></i>
+                                        Flights
+                                    </a>
+                                </li>
+                                <li role="bravo_space">
+                                    <a href="#bravo_space" class="" aria-controls="bravo_space" role="tab"
+                                        data-toggle="tab">
+                                        <i class="icofont-building-alt"></i>
+                                        Rental Listing
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="bravo_car">
+                                    <form action="https://bookingfleet.com/BookingFleet/public/car"
+                                        class="form bravo_form" method="get">
+                                        <div class="g-field-search">
+                                            <div class="row">
+                                                <div class="col-md-4 border-right">
+                                                    <div class="col-md-12 border-right">
+                                                        <div class="form-group">
+                                                            <i class="field-icon fa icofont-map"></i>
+                                                            <div class="form-content">
+                                                                <label> Location </label>
+                                                                <div class="smart-search">
+                                                                    <input type="text"
+                                                                        class="smart-search-location parent_text form-control"
+                                                                        readonly="" placeholder="Where are you going?"
+                                                                        value="" data-onload="Loading..."
+                                                                        data-default="[{&quot;id&quot;:114,&quot;title&quot;:&quot; Pakistan&quot;},{&quot;id&quot;:53,&quot;title&quot;:&quot;- Abbotabad&quot;},{&quot;id&quot;:78,&quot;title&quot;:&quot;- Ahmedpur&quot;},{&quot;id&quot;:103,&quot;title&quot;:&quot;- Astore&quot;},{&quot;id&quot;:73,&quot;title&quot;:&quot;- Attock&quot;},{&quot;id&quot;:89,&quot;title&quot;:&quot;- Badin&quot;},{&quot;id&quot;:66,&quot;title&quot;:&quot;- Bahawalnagar&quot;},{&quot;id&quot;:18,&quot;title&quot;:&quot;- Bahawalpur&quot;},{&quot;id&quot;:93,&quot;title&quot;:&quot;- Balakot&quot;},{&quot;id&quot;:76,&quot;title&quot;:&quot;- Chakwal&quot;},{&quot;id&quot;:88,&quot;title&quot;:&quot;- Charsadda&quot;},{&quot;id&quot;:42,&quot;title&quot;:&quot;- Chiniot&quot;},{&quot;id&quot;:71,&quot;title&quot;:&quot;- Chishtian&quot;},{&quot;id&quot;:100,&quot;title&quot;:&quot;- Chitral&quot;},{&quot;id&quot;:63,&quot;title&quot;:&quot;- Dadu&quot;},{&quot;id&quot;:31,&quot;title&quot;:&quot;- Dera Ghazi Khan&quot;},{&quot;id&quot;:50,&quot;title&quot;:&quot;- Dera Ismail Khan&quot;},{&quot;id&quot;:14,&quot;title&quot;:&quot;- Faisalabad&quot;},{&quot;id&quot;:105,&quot;title&quot;:&quot;- Gilgit Baltistan&quot;},{&quot;id&quot;:62,&quot;title&quot;:&quot;- Gojra&quot;},{&quot;id&quot;:20,&quot;title&quot;:&quot;- Gujranwala&quot;},{&quot;id&quot;:77,&quot;title&quot;:&quot;- Gujranwala&quot;},{&quot;id&quot;:32,&quot;title&quot;:&quot;- Gujrat&quot;},{&quot;id&quot;:45,&quot;title&quot;:&quot;- Hafizabad&quot;},{&quot;id&quot;:104,&quot;title&quot;:&quot;- Hunza Valley&quot;},{&quot;id&quot;:15,&quot;title&quot;:&quot;- Hyderabad&quot;},{&quot;id&quot;:13,&quot;title&quot;:&quot;- Islamabad&quot;},{&quot;id&quot;:56,&quot;title&quot;:&quot;- Jacobabad&quot;},{&quot;id&quot;:70,&quot;title&quot;:&quot;- Jaranwala&quot;},{&quot;id&quot;:90,&quot;title&quot;:&quot;- Jatoi&quot;},{&quot;id&quot;:30,&quot;title&quot;:&quot;- Jhang&quot;},{&quot;id&quot;:57,&quot;title&quot;:&quot;- Jhelum&quot;},{&quot;id&quot;:98,&quot;title&quot;:&quot;- Kaghan&quot;},{&quot;id&quot;:102,&quot;title&quot;:&quot;- Kalam&quot;},{&quot;id&quot;:96,&quot;title&quot;:&quot;- Kalasha Valley&quot;},{&quot;id&quot;:44,&quot;title&quot;:&quot;- Kamoke&quot;},{&quot;id&quot;:11,&quot;title&quot;:&quot;- Karachi&quot;},{&quot;id&quot;:37,&quot;title&quot;:&quot;- Kasur&quot;},{&quot;id&quot;:58,&quot;title&quot;:&quot;- Khairpur&quot;},{&quot;id&quot;:49,&quot;title&quot;:&quot;- Khanewal&quot;},{&quot;id&quot;:85,&quot;title&quot;:&quot;- Khushab&quot;},{&quot;id&quot;:59,&quot;title&quot;:&quot;- Khuzdar&quot;},{&quot;id&quot;:48,&quot;title&quot;:&quot;- Kohat&quot;},{&quot;id&quot;:43,&quot;title&quot;:&quot;- Kotri&quot;},{&quot;id&quot;:95,&quot;title&quot;:&quot;- Kumrat&quot;},{&quot;id&quot;:12,&quot;title&quot;:&quot;- Lahore&quot;},{&quot;id&quot;:26,&quot;title&quot;:&quot;- Larkana&quot;},{&quot;id&quot;:94,&quot;title&quot;:&quot;- Malakand&quot;},{&quot;id&quot;:106,&quot;title&quot;:&quot;- Malam Jabba&quot;},{&quot;id&quot;:54,&quot;title&quot;:&quot;- Mandi Bahauddin&quot;},{&quot;id&quot;:79,&quot;title&quot;:&quot;- Mansehra&quot;},{&quot;id&quot;:36,&quot;title&quot;:&quot;- Mardan&quot;},{&quot;id&quot;:86,&quot;title&quot;:&quot;- Mianwali&quot;},{&quot;id&quot;:39,&quot;title&quot;:&quot;- Mingora&quot;},{&quot;id&quot;:80,&quot;title&quot;:&quot;- Mirpur&quot;},{&quot;id&quot;:47,&quot;title&quot;:&quot;- Mirpur Khas&quot;},{&quot;id&quot;:19,&quot;title&quot;:&quot;- Multan&quot;},{&quot;id&quot;:91,&quot;title&quot;:&quot;- Murree&quot;},{&quot;id&quot;:72,&quot;title&quot;:&quot;- Muzaffarabad&quot;},{&quot;id&quot;:52,&quot;title&quot;:&quot;- Muzaffargarh&quot;},{&quot;id&quot;:97,&quot;title&quot;:&quot;- Naran&quot;},{&quot;id&quot;:41,&quot;title&quot;:&quot;- Nawabshah&quot;},{&quot;id&quot;:83,&quot;title&quot;:&quot;- Nowshera&quot;},{&quot;id&quot;:38,&quot;title&quot;:&quot;- Okara&quot;},{&quot;id&quot;:61,&quot;title&quot;:&quot;- Pakpattan&quot;},{&quot;id&quot;:21,&quot;title&quot;:&quot;- Peshawar&quot;},{&quot;id&quot;:16,&quot;title&quot;:&quot;- Quetta&quot;},{&quot;id&quot;:29,&quot;title&quot;:&quot;- Rahim Yar Khan&quot;},{&quot;id&quot;:92,&quot;title&quot;:&quot;- Rawalakot&quot;},{&quot;id&quot;:17,&quot;title&quot;:&quot;- Rawalpindi&quot;},{&quot;id&quot;:46,&quot;title&quot;:&quot;- Sadiqabad&quot;},{&quot;id&quot;:33,&quot;title&quot;:&quot;- Sahiwal&quot;},{&quot;id&quot;:67,&quot;title&quot;:&quot;- Samundri&quot;},{&quot;id&quot;:22,&quot;title&quot;:&quot;- Sargodha&quot;},{&quot;id&quot;:27,&quot;title&quot;:&quot;- Sheikhupura&quot;},{&quot;id&quot;:23,&quot;title&quot;:&quot;- Sialkot&quot;},{&quot;id&quot;:25,&quot;title&quot;:&quot;- Sukkur&quot;},{&quot;id&quot;:81,&quot;title&quot;:&quot;- Swabi&quot;},{&quot;id&quot;:87,&quot;title&quot;:&quot;- Swat&quot;},{&quot;id&quot;:68,&quot;title&quot;:&quot;- Tando Allahyar&quot;},{&quot;id&quot;:82,&quot;title&quot;:&quot;- Taxila&quot;},{&quot;id&quot;:51,&quot;title&quot;:&quot;- Turbat&quot;},{&quot;id&quot;:74,&quot;title&quot;:&quot;- Vehari&quot;},{&quot;id&quot;:101,&quot;title&quot;:&quot;- yasin- Valley&quot;},{&quot;id&quot;:84,&quot;title&quot;:&quot;- ziarat&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; UAE&quot;},{&quot;id&quot;:108,&quot;title&quot;:&quot;- Abu Dhabi&quot;},{&quot;id&quot;:111,&quot;title&quot;:&quot;- Ajman&quot;},{&quot;id&quot;:107,&quot;title&quot;:&quot;- Dubai&quot;},{&quot;id&quot;:110,&quot;title&quot;:&quot;- Fujairah&quot;},{&quot;id&quot;:109,&quot;title&quot;:&quot;- Ras-al-Khaimah&quot;},{&quot;id&quot;:113,&quot;title&quot;:&quot;- Sharjah&quot;},{&quot;id&quot;:112,&quot;title&quot;:&quot;- Umm Al Quwain&quot;}]">
+                                                                    <input type="hidden" class="child_id"
+                                                                        name="location_id" value="">
+                                                                    <div class="bravo-autocomplete">
+                                                                        <div class="list-item">
+                                                                            <div class="item"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 border-right">
+                                                    <div class="col-md-12 border-right">
+                                                        <div class="form-group">
+                                                            <i class="field-icon fa icofont-map"></i>
+                                                            <div class="form-content">
+                                                                <label> Location </label>
+                                                                <div class="smart-search">
+                                                                    <input type="text"
+                                                                        class="smart-search-location parent_text form-control"
+                                                                        readonly="" placeholder="Where are you going?"
+                                                                        value="" data-onload="Loading..."
+                                                                        data-default="[{&quot;id&quot;:114,&quot;title&quot;:&quot; Pakistan&quot;},{&quot;id&quot;:53,&quot;title&quot;:&quot;- Abbotabad&quot;},{&quot;id&quot;:78,&quot;title&quot;:&quot;- Ahmedpur&quot;},{&quot;id&quot;:103,&quot;title&quot;:&quot;- Astore&quot;},{&quot;id&quot;:73,&quot;title&quot;:&quot;- Attock&quot;},{&quot;id&quot;:89,&quot;title&quot;:&quot;- Badin&quot;},{&quot;id&quot;:66,&quot;title&quot;:&quot;- Bahawalnagar&quot;},{&quot;id&quot;:18,&quot;title&quot;:&quot;- Bahawalpur&quot;},{&quot;id&quot;:93,&quot;title&quot;:&quot;- Balakot&quot;},{&quot;id&quot;:76,&quot;title&quot;:&quot;- Chakwal&quot;},{&quot;id&quot;:88,&quot;title&quot;:&quot;- Charsadda&quot;},{&quot;id&quot;:42,&quot;title&quot;:&quot;- Chiniot&quot;},{&quot;id&quot;:71,&quot;title&quot;:&quot;- Chishtian&quot;},{&quot;id&quot;:100,&quot;title&quot;:&quot;- Chitral&quot;},{&quot;id&quot;:63,&quot;title&quot;:&quot;- Dadu&quot;},{&quot;id&quot;:31,&quot;title&quot;:&quot;- Dera Ghazi Khan&quot;},{&quot;id&quot;:50,&quot;title&quot;:&quot;- Dera Ismail Khan&quot;},{&quot;id&quot;:14,&quot;title&quot;:&quot;- Faisalabad&quot;},{&quot;id&quot;:105,&quot;title&quot;:&quot;- Gilgit Baltistan&quot;},{&quot;id&quot;:62,&quot;title&quot;:&quot;- Gojra&quot;},{&quot;id&quot;:20,&quot;title&quot;:&quot;- Gujranwala&quot;},{&quot;id&quot;:77,&quot;title&quot;:&quot;- Gujranwala&quot;},{&quot;id&quot;:32,&quot;title&quot;:&quot;- Gujrat&quot;},{&quot;id&quot;:45,&quot;title&quot;:&quot;- Hafizabad&quot;},{&quot;id&quot;:104,&quot;title&quot;:&quot;- Hunza Valley&quot;},{&quot;id&quot;:15,&quot;title&quot;:&quot;- Hyderabad&quot;},{&quot;id&quot;:13,&quot;title&quot;:&quot;- Islamabad&quot;},{&quot;id&quot;:56,&quot;title&quot;:&quot;- Jacobabad&quot;},{&quot;id&quot;:70,&quot;title&quot;:&quot;- Jaranwala&quot;},{&quot;id&quot;:90,&quot;title&quot;:&quot;- Jatoi&quot;},{&quot;id&quot;:30,&quot;title&quot;:&quot;- Jhang&quot;},{&quot;id&quot;:57,&quot;title&quot;:&quot;- Jhelum&quot;},{&quot;id&quot;:98,&quot;title&quot;:&quot;- Kaghan&quot;},{&quot;id&quot;:102,&quot;title&quot;:&quot;- Kalam&quot;},{&quot;id&quot;:96,&quot;title&quot;:&quot;- Kalasha Valley&quot;},{&quot;id&quot;:44,&quot;title&quot;:&quot;- Kamoke&quot;},{&quot;id&quot;:11,&quot;title&quot;:&quot;- Karachi&quot;},{&quot;id&quot;:37,&quot;title&quot;:&quot;- Kasur&quot;},{&quot;id&quot;:58,&quot;title&quot;:&quot;- Khairpur&quot;},{&quot;id&quot;:49,&quot;title&quot;:&quot;- Khanewal&quot;},{&quot;id&quot;:85,&quot;title&quot;:&quot;- Khushab&quot;},{&quot;id&quot;:59,&quot;title&quot;:&quot;- Khuzdar&quot;},{&quot;id&quot;:48,&quot;title&quot;:&quot;- Kohat&quot;},{&quot;id&quot;:43,&quot;title&quot;:&quot;- Kotri&quot;},{&quot;id&quot;:95,&quot;title&quot;:&quot;- Kumrat&quot;},{&quot;id&quot;:12,&quot;title&quot;:&quot;- Lahore&quot;},{&quot;id&quot;:26,&quot;title&quot;:&quot;- Larkana&quot;},{&quot;id&quot;:94,&quot;title&quot;:&quot;- Malakand&quot;},{&quot;id&quot;:106,&quot;title&quot;:&quot;- Malam Jabba&quot;},{&quot;id&quot;:54,&quot;title&quot;:&quot;- Mandi Bahauddin&quot;},{&quot;id&quot;:79,&quot;title&quot;:&quot;- Mansehra&quot;},{&quot;id&quot;:36,&quot;title&quot;:&quot;- Mardan&quot;},{&quot;id&quot;:86,&quot;title&quot;:&quot;- Mianwali&quot;},{&quot;id&quot;:39,&quot;title&quot;:&quot;- Mingora&quot;},{&quot;id&quot;:80,&quot;title&quot;:&quot;- Mirpur&quot;},{&quot;id&quot;:47,&quot;title&quot;:&quot;- Mirpur Khas&quot;},{&quot;id&quot;:19,&quot;title&quot;:&quot;- Multan&quot;},{&quot;id&quot;:91,&quot;title&quot;:&quot;- Murree&quot;},{&quot;id&quot;:72,&quot;title&quot;:&quot;- Muzaffarabad&quot;},{&quot;id&quot;:52,&quot;title&quot;:&quot;- Muzaffargarh&quot;},{&quot;id&quot;:97,&quot;title&quot;:&quot;- Naran&quot;},{&quot;id&quot;:41,&quot;title&quot;:&quot;- Nawabshah&quot;},{&quot;id&quot;:83,&quot;title&quot;:&quot;- Nowshera&quot;},{&quot;id&quot;:38,&quot;title&quot;:&quot;- Okara&quot;},{&quot;id&quot;:61,&quot;title&quot;:&quot;- Pakpattan&quot;},{&quot;id&quot;:21,&quot;title&quot;:&quot;- Peshawar&quot;},{&quot;id&quot;:16,&quot;title&quot;:&quot;- Quetta&quot;},{&quot;id&quot;:29,&quot;title&quot;:&quot;- Rahim Yar Khan&quot;},{&quot;id&quot;:92,&quot;title&quot;:&quot;- Rawalakot&quot;},{&quot;id&quot;:17,&quot;title&quot;:&quot;- Rawalpindi&quot;},{&quot;id&quot;:46,&quot;title&quot;:&quot;- Sadiqabad&quot;},{&quot;id&quot;:33,&quot;title&quot;:&quot;- Sahiwal&quot;},{&quot;id&quot;:67,&quot;title&quot;:&quot;- Samundri&quot;},{&quot;id&quot;:22,&quot;title&quot;:&quot;- Sargodha&quot;},{&quot;id&quot;:27,&quot;title&quot;:&quot;- Sheikhupura&quot;},{&quot;id&quot;:23,&quot;title&quot;:&quot;- Sialkot&quot;},{&quot;id&quot;:25,&quot;title&quot;:&quot;- Sukkur&quot;},{&quot;id&quot;:81,&quot;title&quot;:&quot;- Swabi&quot;},{&quot;id&quot;:87,&quot;title&quot;:&quot;- Swat&quot;},{&quot;id&quot;:68,&quot;title&quot;:&quot;- Tando Allahyar&quot;},{&quot;id&quot;:82,&quot;title&quot;:&quot;- Taxila&quot;},{&quot;id&quot;:51,&quot;title&quot;:&quot;- Turbat&quot;},{&quot;id&quot;:74,&quot;title&quot;:&quot;- Vehari&quot;},{&quot;id&quot;:101,&quot;title&quot;:&quot;- yasin- Valley&quot;},{&quot;id&quot;:84,&quot;title&quot;:&quot;- ziarat&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; UAE&quot;},{&quot;id&quot;:108,&quot;title&quot;:&quot;- Abu Dhabi&quot;},{&quot;id&quot;:111,&quot;title&quot;:&quot;- Ajman&quot;},{&quot;id&quot;:107,&quot;title&quot;:&quot;- Dubai&quot;},{&quot;id&quot;:110,&quot;title&quot;:&quot;- Fujairah&quot;},{&quot;id&quot;:109,&quot;title&quot;:&quot;- Ras-al-Khaimah&quot;},{&quot;id&quot;:113,&quot;title&quot;:&quot;- Sharjah&quot;},{&quot;id&quot;:112,&quot;title&quot;:&quot;- Umm Al Quwain&quot;}]">
+                                                                    <input type="hidden" class="child_id"
+                                                                        name="location_id" value="">
+                                                                    <div class="bravo-autocomplete">
+                                                                        <div class="list-item">
+                                                                            <div class="item"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 border-right">
+                                                    <div class="col-md-12 border-right">
+                                                        <div class="form-group">
+                                                            <i class="field-icon fa icofont-map"></i>
+                                                            <div class="form-content">
+                                                                <label> Location </label>
+                                                                <div class="smart-search">
+                                                                    <input type="text"
+                                                                        class="smart-search-location parent_text form-control"
+                                                                        readonly="" placeholder="Where are you going?"
+                                                                        value="" data-onload="Loading..."
+                                                                        data-default="[{&quot;id&quot;:114,&quot;title&quot;:&quot; Pakistan&quot;},{&quot;id&quot;:53,&quot;title&quot;:&quot;- Abbotabad&quot;},{&quot;id&quot;:78,&quot;title&quot;:&quot;- Ahmedpur&quot;},{&quot;id&quot;:103,&quot;title&quot;:&quot;- Astore&quot;},{&quot;id&quot;:73,&quot;title&quot;:&quot;- Attock&quot;},{&quot;id&quot;:89,&quot;title&quot;:&quot;- Badin&quot;},{&quot;id&quot;:66,&quot;title&quot;:&quot;- Bahawalnagar&quot;},{&quot;id&quot;:18,&quot;title&quot;:&quot;- Bahawalpur&quot;},{&quot;id&quot;:93,&quot;title&quot;:&quot;- Balakot&quot;},{&quot;id&quot;:76,&quot;title&quot;:&quot;- Chakwal&quot;},{&quot;id&quot;:88,&quot;title&quot;:&quot;- Charsadda&quot;},{&quot;id&quot;:42,&quot;title&quot;:&quot;- Chiniot&quot;},{&quot;id&quot;:71,&quot;title&quot;:&quot;- Chishtian&quot;},{&quot;id&quot;:100,&quot;title&quot;:&quot;- Chitral&quot;},{&quot;id&quot;:63,&quot;title&quot;:&quot;- Dadu&quot;},{&quot;id&quot;:31,&quot;title&quot;:&quot;- Dera Ghazi Khan&quot;},{&quot;id&quot;:50,&quot;title&quot;:&quot;- Dera Ismail Khan&quot;},{&quot;id&quot;:14,&quot;title&quot;:&quot;- Faisalabad&quot;},{&quot;id&quot;:105,&quot;title&quot;:&quot;- Gilgit Baltistan&quot;},{&quot;id&quot;:62,&quot;title&quot;:&quot;- Gojra&quot;},{&quot;id&quot;:20,&quot;title&quot;:&quot;- Gujranwala&quot;},{&quot;id&quot;:77,&quot;title&quot;:&quot;- Gujranwala&quot;},{&quot;id&quot;:32,&quot;title&quot;:&quot;- Gujrat&quot;},{&quot;id&quot;:45,&quot;title&quot;:&quot;- Hafizabad&quot;},{&quot;id&quot;:104,&quot;title&quot;:&quot;- Hunza Valley&quot;},{&quot;id&quot;:15,&quot;title&quot;:&quot;- Hyderabad&quot;},{&quot;id&quot;:13,&quot;title&quot;:&quot;- Islamabad&quot;},{&quot;id&quot;:56,&quot;title&quot;:&quot;- Jacobabad&quot;},{&quot;id&quot;:70,&quot;title&quot;:&quot;- Jaranwala&quot;},{&quot;id&quot;:90,&quot;title&quot;:&quot;- Jatoi&quot;},{&quot;id&quot;:30,&quot;title&quot;:&quot;- Jhang&quot;},{&quot;id&quot;:57,&quot;title&quot;:&quot;- Jhelum&quot;},{&quot;id&quot;:98,&quot;title&quot;:&quot;- Kaghan&quot;},{&quot;id&quot;:102,&quot;title&quot;:&quot;- Kalam&quot;},{&quot;id&quot;:96,&quot;title&quot;:&quot;- Kalasha Valley&quot;},{&quot;id&quot;:44,&quot;title&quot;:&quot;- Kamoke&quot;},{&quot;id&quot;:11,&quot;title&quot;:&quot;- Karachi&quot;},{&quot;id&quot;:37,&quot;title&quot;:&quot;- Kasur&quot;},{&quot;id&quot;:58,&quot;title&quot;:&quot;- Khairpur&quot;},{&quot;id&quot;:49,&quot;title&quot;:&quot;- Khanewal&quot;},{&quot;id&quot;:85,&quot;title&quot;:&quot;- Khushab&quot;},{&quot;id&quot;:59,&quot;title&quot;:&quot;- Khuzdar&quot;},{&quot;id&quot;:48,&quot;title&quot;:&quot;- Kohat&quot;},{&quot;id&quot;:43,&quot;title&quot;:&quot;- Kotri&quot;},{&quot;id&quot;:95,&quot;title&quot;:&quot;- Kumrat&quot;},{&quot;id&quot;:12,&quot;title&quot;:&quot;- Lahore&quot;},{&quot;id&quot;:26,&quot;title&quot;:&quot;- Larkana&quot;},{&quot;id&quot;:94,&quot;title&quot;:&quot;- Malakand&quot;},{&quot;id&quot;:106,&quot;title&quot;:&quot;- Malam Jabba&quot;},{&quot;id&quot;:54,&quot;title&quot;:&quot;- Mandi Bahauddin&quot;},{&quot;id&quot;:79,&quot;title&quot;:&quot;- Mansehra&quot;},{&quot;id&quot;:36,&quot;title&quot;:&quot;- Mardan&quot;},{&quot;id&quot;:86,&quot;title&quot;:&quot;- Mianwali&quot;},{&quot;id&quot;:39,&quot;title&quot;:&quot;- Mingora&quot;},{&quot;id&quot;:80,&quot;title&quot;:&quot;- Mirpur&quot;},{&quot;id&quot;:47,&quot;title&quot;:&quot;- Mirpur Khas&quot;},{&quot;id&quot;:19,&quot;title&quot;:&quot;- Multan&quot;},{&quot;id&quot;:91,&quot;title&quot;:&quot;- Murree&quot;},{&quot;id&quot;:72,&quot;title&quot;:&quot;- Muzaffarabad&quot;},{&quot;id&quot;:52,&quot;title&quot;:&quot;- Muzaffargarh&quot;},{&quot;id&quot;:97,&quot;title&quot;:&quot;- Naran&quot;},{&quot;id&quot;:41,&quot;title&quot;:&quot;- Nawabshah&quot;},{&quot;id&quot;:83,&quot;title&quot;:&quot;- Nowshera&quot;},{&quot;id&quot;:38,&quot;title&quot;:&quot;- Okara&quot;},{&quot;id&quot;:61,&quot;title&quot;:&quot;- Pakpattan&quot;},{&quot;id&quot;:21,&quot;title&quot;:&quot;- Peshawar&quot;},{&quot;id&quot;:16,&quot;title&quot;:&quot;- Quetta&quot;},{&quot;id&quot;:29,&quot;title&quot;:&quot;- Rahim Yar Khan&quot;},{&quot;id&quot;:92,&quot;title&quot;:&quot;- Rawalakot&quot;},{&quot;id&quot;:17,&quot;title&quot;:&quot;- Rawalpindi&quot;},{&quot;id&quot;:46,&quot;title&quot;:&quot;- Sadiqabad&quot;},{&quot;id&quot;:33,&quot;title&quot;:&quot;- Sahiwal&quot;},{&quot;id&quot;:67,&quot;title&quot;:&quot;- Samundri&quot;},{&quot;id&quot;:22,&quot;title&quot;:&quot;- Sargodha&quot;},{&quot;id&quot;:27,&quot;title&quot;:&quot;- Sheikhupura&quot;},{&quot;id&quot;:23,&quot;title&quot;:&quot;- Sialkot&quot;},{&quot;id&quot;:25,&quot;title&quot;:&quot;- Sukkur&quot;},{&quot;id&quot;:81,&quot;title&quot;:&quot;- Swabi&quot;},{&quot;id&quot;:87,&quot;title&quot;:&quot;- Swat&quot;},{&quot;id&quot;:68,&quot;title&quot;:&quot;- Tando Allahyar&quot;},{&quot;id&quot;:82,&quot;title&quot;:&quot;- Taxila&quot;},{&quot;id&quot;:51,&quot;title&quot;:&quot;- Turbat&quot;},{&quot;id&quot;:74,&quot;title&quot;:&quot;- Vehari&quot;},{&quot;id&quot;:101,&quot;title&quot;:&quot;- yasin- Valley&quot;},{&quot;id&quot;:84,&quot;title&quot;:&quot;- ziarat&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; UAE&quot;},{&quot;id&quot;:108,&quot;title&quot;:&quot;- Abu Dhabi&quot;},{&quot;id&quot;:111,&quot;title&quot;:&quot;- Ajman&quot;},{&quot;id&quot;:107,&quot;title&quot;:&quot;- Dubai&quot;},{&quot;id&quot;:110,&quot;title&quot;:&quot;- Fujairah&quot;},{&quot;id&quot;:109,&quot;title&quot;:&quot;- Ras-al-Khaimah&quot;},{&quot;id&quot;:113,&quot;title&quot;:&quot;- Sharjah&quot;},{&quot;id&quot;:112,&quot;title&quot;:&quot;- Umm Al Quwain&quot;}]">
+                                                                    <input type="hidden" class="child_id"
+                                                                        name="location_id" value="">
+                                                                    <div class="bravo-autocomplete">
+                                                                        <div class="list-item">
+                                                                            <div class="item"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="g-button-submit">
+                                            <button class="btn btn-primary btn-search" type="submit">Search</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <dv class="container">
+            <dv class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="bravo_filter">
+                        <form action="" class="bravo_form_filter">
+                            <div class="filter-title">
+                                FILTER BY
+                            </div>
+                            <!-- <div class="g-filter-item">
+                                    <div class="item-title">
+                                        <h3>Filter Price</h3>
+                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="bravo-filter-price">
+                                            <span class="irs irs--flat js-irs-0 irs-with-grid"><span class="irs"><span
+                                                        class="irs-line" tabindex="0"></span><span class="irs-min"
+                                                        style="visibility: hidden;"> ₨1</span><span class="irs-max"
+                                                        style="visibility: hidden;"> ₨12 500</span><span class="irs-from"
+                                                        style="visibility: visible; left: -3.84673%;"> ₨1</span><span
+                                                        class="irs-to" style="visibility: visible; left: 78.4375%;"> ₨12
+                                                        500</span><span class="irs-single"
+                                                        style="visibility: hidden; left: 26.5699%;"> ₨1 — ₨12
+                                                        500</span></span><span class="irs-grid"
+                                                    style="width: 90.4762%; left: 4.6619%;"><span class="irs-grid-pol"
+                                                        style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                        style="left: 0%; margin-left: -3.27753%;">1</span><span
+                                                        class="irs-grid-pol small" style="left: 20%"></span><span
+                                                        class="irs-grid-pol small" style="left: 15%"></span><span
+                                                        class="irs-grid-pol small" style="left: 10%"></span><span
+                                                        class="irs-grid-pol small" style="left: 5%"></span><span
+                                                        class="irs-grid-pol" style="left: 25%"></span><span
+                                                        class="irs-grid-text js-grid-text-1"
+                                                        style="left: 25%; visibility: visible; margin-left: -8.48958%;">3
+                                                        126</span><span class="irs-grid-pol small"
+                                                        style="left: 45%"></span><span class="irs-grid-pol small"
+                                                        style="left: 40%"></span><span class="irs-grid-pol small"
+                                                        style="left: 35%"></span><span class="irs-grid-pol small"
+                                                        style="left: 30%"></span><span class="irs-grid-pol"
+                                                        style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                                        style="left: 50%; visibility: visible; margin-left: -8.48958%;">6
+                                                        251</span><span class="irs-grid-pol small"
+                                                        style="left: 70%"></span><span class="irs-grid-pol small"
+                                                        style="left: 65%"></span><span class="irs-grid-pol small"
+                                                        style="left: 60%"></span><span class="irs-grid-pol small"
+                                                        style="left: 55%"></span><span class="irs-grid-pol"
+                                                        style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                                        style="left: 75%; visibility: visible; margin-left: -8.48958%;">9
+                                                        375</span><span class="irs-grid-pol small"
+                                                        style="left: 95%"></span><span class="irs-grid-pol small"
+                                                        style="left: 90%"></span><span class="irs-grid-pol small"
+                                                        style="left: 85%"></span><span class="irs-grid-pol small"
+                                                        style="left: 80%"></span><span class="irs-grid-pol"
+                                                        style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                                        style="left: 100%; margin-left: -9.9814%;">12 500</span></span><span
+                                                    class="irs-bar" style="left: 4.7619%; width: 90.4762%;"></span><span
+                                                    class="irs-shadow shadow-from" style="display: none;"></span><span
+                                                    class="irs-shadow shadow-to" style="display: none;"></span><span
+                                                    class="irs-handle from" style="left: 0%;"><i></i><i></i><i></i></span><span
+                                                    class="irs-handle to"
+                                                    style="left: 90.4762%;"><i></i><i></i><i></i></span></span><input
+                                                type="hidden" class="filter-price" name="price_range" data-symbol=" ₨"
+                                                data-min="1" data-max="12500" data-from="1" data-to="12500" readonly=""
+                                                value="1;12500" tabindex="-1">
+                                            <button type="submit" class="btn btn-link btn-apply-price-range">APPLY</button>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                            <div class="g-filter-item">
+                                <div class="item-title">
+                                    <h3>Hotel Star</h3>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </div>
+                                <div class="item-content">
+                                    <ul>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="5">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="4">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="3">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="2">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="1">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="g-filter-item">
+                                <div class="item-title">
+                                    <h3>Review Score</h3>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </div>
+                                <div class="item-content">
+                                    <ul>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="5">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="4">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="3">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="2">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input name="star_rate[]" type="checkbox" value="1">
+                                                    
+                                                    <i class="fa fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="g-filter-item">
+                                <div class="item-title">
+                                    <h3> Property type </h3>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </div>
+                                <div class="item-content">
+                                    <ul>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="32"> Apartments
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="33"> Hotels
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="34"> Homestays
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="35"> Villas
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="36"> Boats
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="37"> Motels
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="38"> Resorts
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="39"> Lodges
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="40"> Holiday homes
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="41"> Cruises
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-link btn-more-item">More <i
+                                            class="fa fa-caret-down"></i></button>
+                                </div>
+                            </div>
+                            <div class="g-filter-item">
+                                <div class="item-title">
+                                    <h3> Facilities </h3>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </div>
+                                <div class="item-content">
+                                    <ul>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="32"> Apartments
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="33"> Hotels
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="34"> Homestays
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="35"> Villas
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="36"> Boats
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="37"> Motels
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="38"> Resorts
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="39"> Lodges
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="40"> Holiday homes
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="41"> Cruises
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-link btn-more-item">More <i
+                                            class="fa fa-caret-down"></i></button>
+                                </div>
+                            </div>
+                            <div class="g-filter-item">
+                                <div class="item-title">
+                                    <h3> Hotel Service </h3>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </div>
+                                <div class="item-content">
+                                    <ul>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="32"> Apartments
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="33"> Hotels
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="34"> Homestays
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="35"> Villas
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="36"> Boats
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="37"> Motels
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="38"> Resorts
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="39"> Lodges
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="40"> Holiday homes
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="hide">
+                                            <div class="bravo-checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="terms[]" value="41"> Cruises
+                                                
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-link btn-more-item">More <i
+                                            class="fa fa-caret-down"></i></button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12">
+
+                </div>
+            </dv>
+        </dv>
+
+
+        <!-- bravo_footer -->
+        <div class="bravo_footer">
+            <div class="mailchimp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                            <div class="row">
+                                <div class="col-xs-12  col-md-7 col-lg-6">
+                                    <div class="media ">
+                                        <div class="media-left hidden-xs">
+                                            <i class="icofont-island-alt"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Get Updates &amp; More</h4>
+                                            <p>Thoughtful thoughts to your inbox</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-5 col-lg-6">
+                                    <form action="https://bookingfleet.com/BookingFleet/public/newsletter/subscribe"
+                                        class="subcribe-form bravo-subscribe-form bravo-form">
+                                        <input type="hidden" name="_token"
+                                            value="wiXcrBPPF6LHeG09fo9V1CxlCK2OW9mGfWW621Sa">
+                                        <div class="form-group">
+                                            <input type="text" name="email" class="form-control email-input"
+                                                placeholder="Your Email">
+                                            <button type="submit" class="btn-submit">Subscribe
+                                                <i class="fa fa-spinner fa-pulse fa-fw"></i>
+                                            </button>
+                                        </div>
+                                        <div class="form-mess"></div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                <div class="container context">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span
+                                    style="color: #1a2b48; font-family: Arial; font-size: 14px; background-color: #ffffff;">Copyright
+                                    © 2021 by bookingfleet</span></p>
+                            <div class="f-visa">
+                                <p>&nbsp;</p>
+                                <p><span
+                                        style="color: #1a2b48; font-family: Arial; font-size: 14px; background-color: #ffffff;">bookingfleet</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="https://bookingfleet.com/BookingFleet/public/libs/icofont/icofont.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let open_btn = document.getElementById("open");
+        let close_btn = document.getElementById("close");
+        let link_group = document.getElementById("link-group");
+        function menuOpen() {
+            open_btn.style.display = "none";
+            close_btn.style.display = "block";
+            link_group.style.right = "0%";
+        }
+        function menuClose() {
+            open_btn.style.display = "block";
+            close_btn.style.display = "none";
+            link_group.style.right = "-100%";
+        }
+    </script>
+</body>
+
+</html>

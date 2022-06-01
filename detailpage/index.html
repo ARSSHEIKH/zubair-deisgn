@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="navbar-brand">
+                logo
+            </div>
+            <div id="link-group" class="link-group">
+                <ul>
+                    <li class="nav-link"><a href=""><span class="material-icons">home</span>Home</a></li>
+                    <li class="nav-link"><a href=""><span class="material-icons">info</span>About</a></li>
+                    <li class="nav-link"><a href=""><span class="material-icons">article</span>Work</a></li>
+                    <li class="nav-link"><a href=""><span class="material-icons">photo_library</span>Gallery</a></li>
+                    <li class="nav-link"><a href=""><span class="material-icons">contacts</span>Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-btn">
+                <span onclick="menuOpen();" id="open" class="material-icons open">menu</span>
+                <span onclick="menuClose();" id="close" c class="material-icons close">close</span>
+            </div>
+        </div>
+
+        <!-- bravo_detail_space -->
+        <div class="bravo_detail_space">
+            <!-- content -->
+            <div class="bravo_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-9">
+                            <div class="g-header">
+                                <div class="left">
+                                    <div class="star-rate">
+                                        <i class="fa fa-star"></i>
+                                        <h1>Mount Sina Hotel</h1>
+                                    </div>
+
+                                </div>
+                                <div class="right">
+                                    <div class="review-score">
+                                        <div class="head">
+                                            <div class="left">
+                                                <span class="head-rating">Very Good</span>
+                                                <span class="text-rating">from 5 reviews</span>
+                                            </div>
+                                            <div class="score">
+                                                4.2<span>/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="foot">
+                                            100% of guests recommend
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="g-overview">
+                                <h3>Description</h3>
+                                <div class="description">
+                                    <p
+                                        style="margin:1em 0px;font-family:Arial, Helvetica, sans-serif;font-size:14px;background:#ffffff 0px 0px;text-align:justify;color:#333333;">
+                                        There is an opportunity to rent a car. Designated smoking areas are provided.
+                                        You can call to the front desk and order room service. Soundproofing adds more
+                                        comfort to the rooms. There is a restaurant functioning where you can order
+                                        delicious dishes and beverages. A tour desk can assist you in arranging tours to
+                                        the most fascinating places. Payment for services is possible with bank cards:
+                                        American Express, Visa, Mastercard, Diners Club, UnionPay credit card.</p>
+                                    <p
+                                        style="margin:1em 0px;font-family:Arial, Helvetica, sans-serif;font-size:14px;background:#ffffff 0px 0px;text-align:justify;color:#333333;">
+                                        Staff talks in Russian, English and Arabic.</p>
+                                    <h3
+                                        style="margin:0px 0px 1em;font-family:Arial, Helvetica, sans-serif;font-size:18px;background:#ffffff 0px 0px;font-weight:400;">
+                                        A few words about rooms</h3>
+                                    <p
+                                        style="margin:1em 0px;font-family:Arial, Helvetica, sans-serif;font-size:14px;background:#ffffff 0px 0px;text-align:justify;color:#333333;">
+                                        For guests are available 6 rooms in the hotel. You can choose from different
+                                        types of rooms: quadruple, suite, triple, double, family, twin/double. Each
+                                        guestroom features amenities such as telephone, air conditioning, free
+                                        toiletries, flat-screen tv.</p>
+                                    <p
+                                        style="margin:1em 0px;font-family:Arial, Helvetica, sans-serif;font-size:14px;background:#ffffff 0px 0px;text-align:justify;color:#333333;">
+                                        Accommodation has a lot of rooms with view.</p>
+                                    <h4
+                                        style="margin:0px 0px 1em;font-family:Arial, Helvetica, sans-serif;font-size:16px;background:#ffffff 0px 0px;color:#333333;font-weight:400;">
+                                        Online MOUNT SINA HOTEL booking</h4>
+                                    <p
+                                        style="margin:1em 0px;font-family:Arial, Helvetica, sans-serif;font-size:14px;background:#ffffff 0px 0px;text-align:justify;color:#333333;">
+                                        It's easy to book MOUNT SINA HOTEL with the help of our website. With the help
+                                        of the service "Planet оf Hotels", you can reserve a room you liked in a couple
+                                        of minutes and without fees.</p>
+                                </div>
+                            </div>
+                            <div class="hotel_rooms_form">
+                                <h3 class="heading-section">Available Rooms</h3>
+                                <div class="nav-enquiry">
+                                    <div class="enquiry-item active">
+                                        <div class="enquiry-item active"><span>Book</span></div>
+                                    </div>
+                                    <div class="enquiry-item"><span>Enquiry</span></div>
+                                </div>
+                                <div class="form-book">
+                                    <div class="form-search-rooms">
+                                        <div class="d-flex form-search-row">
+                                            <div class="col-md-4">
+                                                <div data-format="MM/DD/YYYY"
+                                                    class="form-group form-date-field form-date-search "><i
+                                                        class="fa fa-angle-down arrow"></i> <input type="text"
+                                                        class="start_date" style="height: 1px; visibility: hidden;">
+                                                    <div class="date-wrapper form-content"><label
+                                                            class="form-label">Check In - Out</label>
+                                                        <div class="render check-in-render">Please select</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group"><i class="fa fa-angle-down arrow"></i>
+                                                    <div class="form-content">
+                                                        <label class="form-label">Guests</label>
+                                                        <div class="render"><span class="adults"><span class="one">1
+                                                                    <span>Adult</span></span></span>
+                                                            -
+                                                            <span class="children"><span class="one">0
+                                                                    <span>Child</span></span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu select-guests-dropdown">
+                                                        <div class="dropdown-item-row">
+                                                            <div class="label">Adults</div>
+                                                            <div class="val"><span data-input="adults"
+                                                                    class="btn-minus2"><i
+                                                                        class="icon ion-md-remove"></i></span> <span
+                                                                    class="count-display"><input type="number"
+                                                                        min="1"></span> <span data-input="adults"
+                                                                    class="btn-add2"><i
+                                                                        class="icon ion-ios-add"></i></span></div>
+                                                        </div>
+                                                        <div class="dropdown-item-row">
+                                                            <div class="label">Children</div>
+                                                            <div class="val"><span data-input="children"
+                                                                    class="btn-minus2"><i
+                                                                        class="icon ion-md-remove"></i></span> <span
+                                                                    class="count-display"><input type="number"
+                                                                        min="0"></span> <span data-input="children"
+                                                                    class="btn-add2"><i
+                                                                        class="icon ion-ios-add"></i></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-btn">
+                                                <div class="g-button-submit"><button type="submit"
+                                                        class="btn btn-primary btn-search">
+                                                        Check Availability
+                                                        <i class="fa fa-spinner fa-spin"
+                                                            style="display: none;"></i></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="start_room_sticky"></div>
+                                    <div class="hotel_list_rooms">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="room-item">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-3">
+                                                            <div class="image"><img
+                                                                    src="https://bookingfleet.com/BookingFleet/public/uploads/0000/40/2021/12/14/room-1.jpg"
+                                                                    alt="">
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6">
+                                                            <div class="hotel-info">
+                                                                <h3 class="room-name">MSH Room</h3>
+                                                                <!---->
+                                                                <div>No Prepayment Needed</div>
+                                                                <ul class="room-meta">
+                                                                    <li>
+                                                                        <div data-toggle="tooltip" data-placement="top"
+                                                                            title="" data-original-title="Room Footage"
+                                                                            class="item"><i
+                                                                                class="input-icon field-icon icofont-ruler-compass-alt"></i>
+                                                                            <span>30 m<sup>2</sup></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div data-toggle="tooltip" data-placement="top"
+                                                                            title="" data-original-title="No. Beds"
+                                                                            class="item"><i
+                                                                                class="input-icon field-icon icofont-hotel"></i>
+                                                                            <span>x1</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div data-toggle="tooltip" data-placement="top"
+                                                                            title="" data-original-title="No. Adults"
+                                                                            class="item"><i
+                                                                                class="input-icon field-icon icofont-users-alt-4"></i>
+                                                                            <span>x2</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <!---->
+                                                                </ul>
+                                                                <div class="room-attribute-item">
+                                                                    <ul>
+                                                                        <li><i data-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                class="input-icon field-icon fa fa-smile-o"
+                                                                                data-original-title="24h Room service"></i>
+                                                                        </li>
+                                                                        <li><i data-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                class="input-icon field-icon fa fa-smile-o"
+                                                                                data-original-title="Satellite channels"></i>
+                                                                        </li>
+                                                                        <li><i data-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                class="input-icon field-icon fa fa-smile-o"
+                                                                                data-original-title="Scanner"></i>
+                                                                        </li>
+                                                                        <li><i data-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                class="input-icon field-icon fa fa-smile-o"
+                                                                                data-original-title="Separate lounge"></i>
+                                                                        </li>
+                                                                        <li><i data-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                class="input-icon field-icon fa fa-smile-o"
+                                                                                data-original-title="Separate closet"></i>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="g-rules">
+                                <h3>Rules</h3>
+                                <div class="description">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="key">Check In</div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="value"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="key">Check Out</div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="value"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bravo-hr"></div>
+                            <div class="bravo-hr"></div>
+                            <div class="bravo-reviews">
+                                <h3>Reviews</h3>
+                                <div class="review-box">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="review-box-score">
+                                                <div class="review-score">
+                                                    0<span class="per-total">/5</span>
+                                                </div>
+                                                <div class="review-score-text">
+                                                    Not rated
+                                                </div>
+                                                <div class="review-score-base">
+                                                    Based on
+                                                    <span>
+                                                        0 review
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="review-sumary">
+                                                <div class="item">
+                                                    <div class="label">
+                                                        Excellent
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="percent green" style="width: 0%"></div>
+                                                    </div>
+                                                    <div class="number">0</div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="label">
+                                                        Very Good
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="percent green" style="width: 0%"></div>
+                                                    </div>
+                                                    <div class="number">0</div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="label">
+                                                        Average
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="percent green" style="width: 0%"></div>
+                                                    </div>
+                                                    <div class="number">0</div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="label">
+                                                        Poor
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="percent green" style="width: 0%"></div>
+                                                    </div>
+                                                    <div class="number">0</div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="label">
+                                                        Terrible
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="percent green" style="width: 0%"></div>
+                                                    </div>
+                                                    <div class="number">0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-list">
+                                </div>
+                                <div class="review-pag-wrapper">
+                                    <div class="review-pag-text">No Review</div>
+                                </div>
+                                <div class="review-message">
+                                    You must <a href="#login" data-toggle="modal" data-target="#login">log in</a> to write review
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-3">
+                            <style>
+                                .bravo_wrap .bravo_form .form-content2 {
+                                    position: relative;
+                                    padding: 20px 0 10px 0px;
+                                    transition: all 0.3s;
+                                }
+                            </style>
+                            <div class="sidebar" style="padding-bottom: 25px;">
+                                <div class="widget user_widget_search">
+                                    <h2>search Hotels</h2>
+                                    <form action="https://bookingfleet.com/BookingFleet/public/hotel"
+                                        class="form bravo_form" method="get" style="padding-bottom: 25px;">
+
+                                        <div class="form-group">
+                                            <!--<i class="field-icon fa icofont-map"></i>-->
+                                            <div class="form-content2">
+                                                <label> Location </label>
+                                                <div class="smart-search">
+                                                    <input type="text"
+                                                        class="smart-search-location parent_text form-control"
+                                                        readonly="" placeholder="Where are you going?" value=""
+                                                        data-onload="Loading..."
+                                                        data-default="[{&quot;id&quot;:10,&quot;title&quot;:&quot; UAE&quot;},{&quot;id&quot;:107,&quot;title&quot;:&quot;- Dubai&quot;},{&quot;id&quot;:108,&quot;title&quot;:&quot;- Abu Dhabi&quot;},{&quot;id&quot;:109,&quot;title&quot;:&quot;- Ras-al-Khaimah&quot;},{&quot;id&quot;:110,&quot;title&quot;:&quot;- Fujairah&quot;},{&quot;id&quot;:111,&quot;title&quot;:&quot;- Ajman&quot;},{&quot;id&quot;:112,&quot;title&quot;:&quot;- Umm Al Quwain&quot;},{&quot;id&quot;:113,&quot;title&quot;:&quot;- Sharjah&quot;},{&quot;id&quot;:114,&quot;title&quot;:&quot; Pakistan&quot;},{&quot;id&quot;:11,&quot;title&quot;:&quot;- Karachi&quot;},{&quot;id&quot;:12,&quot;title&quot;:&quot;- Lahore&quot;},{&quot;id&quot;:13,&quot;title&quot;:&quot;- Islamabad&quot;},{&quot;id&quot;:14,&quot;title&quot;:&quot;- Faisalabad&quot;},{&quot;id&quot;:15,&quot;title&quot;:&quot;- Hyderabad&quot;},{&quot;id&quot;:16,&quot;title&quot;:&quot;- Quetta&quot;},{&quot;id&quot;:17,&quot;title&quot;:&quot;- Rawalpindi&quot;},{&quot;id&quot;:18,&quot;title&quot;:&quot;- Bahawalpur&quot;},{&quot;id&quot;:19,&quot;title&quot;:&quot;- Multan&quot;},{&quot;id&quot;:20,&quot;title&quot;:&quot;- Gujranwala&quot;},{&quot;id&quot;:21,&quot;title&quot;:&quot;- Peshawar&quot;},{&quot;id&quot;:22,&quot;title&quot;:&quot;- Sargodha&quot;},{&quot;id&quot;:23,&quot;title&quot;:&quot;- Sialkot&quot;},{&quot;id&quot;:25,&quot;title&quot;:&quot;- Sukkur&quot;},{&quot;id&quot;:26,&quot;title&quot;:&quot;- Larkana&quot;},{&quot;id&quot;:27,&quot;title&quot;:&quot;- Sheikhupura&quot;},{&quot;id&quot;:29,&quot;title&quot;:&quot;- Rahim Yar Khan&quot;},{&quot;id&quot;:30,&quot;title&quot;:&quot;- Jhang&quot;},{&quot;id&quot;:31,&quot;title&quot;:&quot;- Dera Ghazi Khan&quot;},{&quot;id&quot;:32,&quot;title&quot;:&quot;- Gujrat&quot;},{&quot;id&quot;:33,&quot;title&quot;:&quot;- Sahiwal&quot;},{&quot;id&quot;:36,&quot;title&quot;:&quot;- Mardan&quot;},{&quot;id&quot;:37,&quot;title&quot;:&quot;- Kasur&quot;},{&quot;id&quot;:38,&quot;title&quot;:&quot;- Okara&quot;},{&quot;id&quot;:39,&quot;title&quot;:&quot;- Mingora&quot;},{&quot;id&quot;:41,&quot;title&quot;:&quot;- Nawabshah&quot;},{&quot;id&quot;:42,&quot;title&quot;:&quot;- Chiniot&quot;},{&quot;id&quot;:43,&quot;title&quot;:&quot;- Kotri&quot;},{&quot;id&quot;:44,&quot;title&quot;:&quot;- Kamoke&quot;},{&quot;id&quot;:45,&quot;title&quot;:&quot;- Hafizabad&quot;},{&quot;id&quot;:46,&quot;title&quot;:&quot;- Sadiqabad&quot;},{&quot;id&quot;:47,&quot;title&quot;:&quot;- Mirpur Khas&quot;},{&quot;id&quot;:48,&quot;title&quot;:&quot;- Kohat&quot;},{&quot;id&quot;:49,&quot;title&quot;:&quot;- Khanewal&quot;},{&quot;id&quot;:50,&quot;title&quot;:&quot;- Dera Ismail Khan&quot;},{&quot;id&quot;:51,&quot;title&quot;:&quot;- Turbat&quot;},{&quot;id&quot;:52,&quot;title&quot;:&quot;- Muzaffargarh&quot;},{&quot;id&quot;:53,&quot;title&quot;:&quot;- Abbotabad&quot;},{&quot;id&quot;:54,&quot;title&quot;:&quot;- Mandi Bahauddin&quot;},{&quot;id&quot;:56,&quot;title&quot;:&quot;- Jacobabad&quot;},{&quot;id&quot;:57,&quot;title&quot;:&quot;- Jhelum&quot;},{&quot;id&quot;:58,&quot;title&quot;:&quot;- Khairpur&quot;},{&quot;id&quot;:59,&quot;title&quot;:&quot;- Khuzdar&quot;},{&quot;id&quot;:61,&quot;title&quot;:&quot;- Pakpattan&quot;},{&quot;id&quot;:62,&quot;title&quot;:&quot;- Gojra&quot;},{&quot;id&quot;:63,&quot;title&quot;:&quot;- Dadu&quot;},{&quot;id&quot;:66,&quot;title&quot;:&quot;- Bahawalnagar&quot;},{&quot;id&quot;:67,&quot;title&quot;:&quot;- Samundri&quot;},{&quot;id&quot;:68,&quot;title&quot;:&quot;- Tando Allahyar&quot;},{&quot;id&quot;:70,&quot;title&quot;:&quot;- Jaranwala&quot;},{&quot;id&quot;:71,&quot;title&quot;:&quot;- Chishtian&quot;},{&quot;id&quot;:72,&quot;title&quot;:&quot;- Muzaffarabad&quot;},{&quot;id&quot;:73,&quot;title&quot;:&quot;- Attock&quot;},{&quot;id&quot;:74,&quot;title&quot;:&quot;- Vehari&quot;},{&quot;id&quot;:76,&quot;title&quot;:&quot;- Chakwal&quot;},{&quot;id&quot;:77,&quot;title&quot;:&quot;- Gujranwala&quot;},{&quot;id&quot;:78,&quot;title&quot;:&quot;- Ahmedpur&quot;},{&quot;id&quot;:79,&quot;title&quot;:&quot;- Mansehra&quot;},{&quot;id&quot;:80,&quot;title&quot;:&quot;- Mirpur&quot;},{&quot;id&quot;:81,&quot;title&quot;:&quot;- Swabi&quot;},{&quot;id&quot;:82,&quot;title&quot;:&quot;- Taxila&quot;},{&quot;id&quot;:83,&quot;title&quot;:&quot;- Nowshera&quot;},{&quot;id&quot;:84,&quot;title&quot;:&quot;- ziarat&quot;},{&quot;id&quot;:85,&quot;title&quot;:&quot;- Khushab&quot;},{&quot;id&quot;:86,&quot;title&quot;:&quot;- Mianwali&quot;},{&quot;id&quot;:87,&quot;title&quot;:&quot;- Swat&quot;},{&quot;id&quot;:88,&quot;title&quot;:&quot;- Charsadda&quot;},{&quot;id&quot;:89,&quot;title&quot;:&quot;- Badin&quot;},{&quot;id&quot;:90,&quot;title&quot;:&quot;- Jatoi&quot;},{&quot;id&quot;:91,&quot;title&quot;:&quot;- Murree&quot;},{&quot;id&quot;:92,&quot;title&quot;:&quot;- Rawalakot&quot;},{&quot;id&quot;:93,&quot;title&quot;:&quot;- Balakot&quot;},{&quot;id&quot;:94,&quot;title&quot;:&quot;- Malakand&quot;},{&quot;id&quot;:95,&quot;title&quot;:&quot;- Kumrat&quot;},{&quot;id&quot;:96,&quot;title&quot;:&quot;- Kalasha Valley&quot;},{&quot;id&quot;:97,&quot;title&quot;:&quot;- Naran&quot;},{&quot;id&quot;:98,&quot;title&quot;:&quot;- Kaghan&quot;},{&quot;id&quot;:100,&quot;title&quot;:&quot;- Chitral&quot;},{&quot;id&quot;:101,&quot;title&quot;:&quot;- yasin- Valley&quot;},{&quot;id&quot;:102,&quot;title&quot;:&quot;- Kalam&quot;},{&quot;id&quot;:103,&quot;title&quot;:&quot;- Astore&quot;},{&quot;id&quot;:104,&quot;title&quot;:&quot;- Hunza Valley&quot;},{&quot;id&quot;:105,&quot;title&quot;:&quot;- Gilgit Baltistan&quot;},{&quot;id&quot;:106,&quot;title&quot;:&quot;- Malam Jabba&quot;}]">
+                                                    <input type="hidden" class="child_id" name="location_id" value="">
+                                                    <div class="bravo-autocomplete">
+
+                                                        <div class="list-item">
+
+                                                        </div>
+                                                        <!-- <div class="message">Loading...</div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <!--<i class="field-icon icofont-wall-clock"></i>-->
+                                            <div class="form-content" style="padding: 20px 0 10px 0px;">
+                                                <div class="form-date-search-hotel">
+                                                    <div class="date-wrapper">
+                                                        <div class="check-in-wrapper">
+                                                            <label>Check In - Check Out</label>
+                                                            <div class="render check-in-render">05/31/2022</div>
+                                                            <span> - </span>
+                                                            <div class="render check-out-render">06/01/2022</div>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" class="check-in-input" value="05/31/2022"
+                                                        name="start">
+                                                    <input type="hidden" class="check-out-input" value="06/01/2022"
+                                                        name="end">
+                                                    <input type="text" class="check-in-out" name="date"
+                                                        value="2022-05-31 - 2022-06-01">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-select-guests"
+                                            style=" display: block;width: 80%;position: relative;">
+                                            <div class="form-group">
+                                                <!-- <i class="field-icon icofont-travelling"></i> -->
+                                                <div class="form-content2 dropdown-toggle" data-toggle="dropdown">
+                                                    <div class="wrapper-more">
+                                                        <label> Guests </label>
+                                                        <div class="render">
+                                                            <span class="adults"><span class="one ">1 Adult</span> <span
+                                                                    class=" d-none  multi" data-html=":count Adults">1
+                                                                    Adults</span></span>
+                                                            -
+                                                            <span class="children">
+                                                                <span class="one " data-html=":count Child">0
+                                                                    Child</span>
+                                                                <span class="multi  d-none "
+                                                                    data-html=":count Children">0 Children</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-menu select-guests-dropdown">
+                                                    <div class="dropdown-item-row">
+                                                        <div class="label">Rooms</div>
+                                                        <div class="val">
+                                                            <span class="btn-minus" data-input="room"><i
+                                                                    class="icon ion-md-remove"></i></span>
+                                                            <span class="count-display"><input type="number" name="room"
+                                                                    value="1" min="1"></span>
+                                                            <span class="btn-add" data-input="room"><i
+                                                                    class="icon ion-ios-add"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item-row">
+                                                        <div class="label">Adults</div>
+                                                        <div class="val">
+                                                            <span class="btn-minus" data-input="adults"><i
+                                                                    class="icon ion-md-remove"></i></span>
+                                                            <span class="count-display"><input type="number"
+                                                                    name="adults" value="1" min="1"></span>
+                                                            <span class="btn-add" data-input="adults"><i
+                                                                    class="icon ion-ios-add"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item-row">
+                                                        <div class="label">Children</div>
+                                                        <div class="val">
+                                                            <span class="btn-minus" data-input="children"><i
+                                                                    class="icon ion-md-remove"></i></span>
+                                                            <span class="count-display"><input type="number"
+                                                                    name="children" value="0" min="0"></span>
+                                                            <span class="btn-add" data-input="children"><i
+                                                                    class="icon ion-ios-add"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-search" type="submit">Search</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="owner-info widget-box">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="https://bookingfleet.com/BookingFleet/public/profile/40"
+                                            target="_blank" class="avatar-cover"
+                                            style="background-image: url('https://bookingfleet.com/BookingFleet/public/images/avatar.png')">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a class="author-link"
+                                                href="https://bookingfleet.com/BookingFleet/public/profile/40"
+                                                target="_blank">Mount Sina Hotel</a>
+                                            <img data-toggle="tooltip" data-placement="top"
+                                                src="https://bookingfleet.com/BookingFleet/public/icon/ico-not-vefified-1.svg"
+                                                title="" alt="Verified" data-original-title="Not verified">
+                                        </h4>
+                                        <p>Member Since Nov 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="g-all-attribute is_pc">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- bravo_footer -->
+        <div class="bravo_footer">
+            <div class="mailchimp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                            <div class="row">
+                                <div class="col-xs-12  col-md-7 col-lg-6">
+                                    <div class="media ">
+                                        <div class="media-left hidden-xs">
+                                            <i class="icofont-island-alt"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Get Updates &amp; More</h4>
+                                            <p>Thoughtful thoughts to your inbox</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-5 col-lg-6">
+                                    <form action="https://bookingfleet.com/BookingFleet/public/newsletter/subscribe"
+                                        class="subcribe-form bravo-subscribe-form bravo-form">
+                                        <input type="hidden" name="_token"
+                                            value="wiXcrBPPF6LHeG09fo9V1CxlCK2OW9mGfWW621Sa">
+                                        <div class="form-group">
+                                            <input type="text" name="email" class="form-control email-input"
+                                                placeholder="Your Email">
+                                            <button type="submit" class="btn-submit">Subscribe
+                                                <i class="fa fa-spinner fa-pulse fa-fw"></i>
+                                            </button>
+                                        </div>
+                                        <div class="form-mess"></div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                <div class="container context">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span
+                                    style="color: #1a2b48; font-family: Arial; font-size: 14px; background-color: #ffffff;">Copyright
+                                    © 2021 by bookingfleet</span></p>
+                            <div class="f-visa">
+                                <p>&nbsp;</p>
+                                <p><span
+                                        style="color: #1a2b48; font-family: Arial; font-size: 14px; background-color: #ffffff;">bookingfleet</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://bookingfleet.com/BookingFleet/public/libs/icofont/icofont.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let open_btn = document.getElementById("open");
+        let close_btn = document.getElementById("close");
+        let link_group = document.getElementById("link-group");
+        function menuOpen() {
+            open_btn.style.display = "none";
+            close_btn.style.display = "block";
+            link_group.style.right = "0%";
+        }
+        function menuClose() {
+            open_btn.style.display = "block";
+            close_btn.style.display = "none";
+            link_group.style.right = "-100%";
+        }
+    </script>
+</body>
+
+</html>

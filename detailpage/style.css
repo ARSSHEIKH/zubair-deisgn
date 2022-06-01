@@ -1,0 +1,858 @@
+body{
+    font-family: Arial;
+}
+body .navbar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    font-family: 'Source Sans Pro', sans-serif;
+    justify-content: center !important;
+    background-color: #f4f5f9;
+}
+body .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 80px;
+    float: left;
+    user-select: none;
+}
+body .navbar .navbar-brand img {
+    height: 80%;
+}
+body .navbar .link-group {
+    max-width: 100%;
+    transition: 1s;
+    margin-left: 10rem;
+}
+ul{
+    list-style-type: none
+}
+body .navbar .link-group ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80%;
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+body .navbar .link-group ul li a {
+    text-decoration: none;
+    color: #1A2B48;
+}
+body .navbar .link-group ul li a span {
+    display: none;
+}
+body .navbar .link-group ul li:hover {
+    border-bottom: 2px solid #cc704b;
+}
+body .navbar .mobile-btn {
+    display: none;
+}
+@media screen and (max-width: 930px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+   }
+   body .navbar{
+       justify-content: flex-start !important;
+   }
+   body .navbar .navbar-brand{
+       
+    margin-left: 10rem;
+   }
+    body .navbar .link-group {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.2);
+        float: right;
+        top: 80px;
+        user-select: none;
+        border-radius: 10px 0px 0px 10px;
+   }
+    body .navbar .link-group ul {
+        height: 100%;
+        right: 11%;
+   }
+    body .navbar .link-group ul li {
+        justify-content: start;
+        width: 95%;
+        height: 60px;
+        margin-bottom: 10px;
+        padding: 20px;
+        border-radius: 5px;
+   }
+    body .navbar .link-group ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+    body .navbar .link-group ul li a span {
+        display: block;
+        padding: 0px 16px;
+   }
+    body .navbar .link-group ul li:hover {
+        background-color: darkgray;
+        border: none;
+   }
+    body .navbar .mobile-btn {
+        position: absolute;
+        float: right;
+        right: 20px;
+        top: 10px;
+        display: block;
+        user-select: none;
+   }
+    body .navbar .mobile-btn span {
+        color: #1A2B48;
+        font-size: 60px;
+   }
+    body .navbar .mobile-btn .open {
+        cursor: pointer;
+   }
+    body .navbar .mobile-btn .close {
+        cursor: pointer;
+        display: none;
+        color: maroon;
+   }
+}
+/* end navbar */
+
+
+/* body */
+.bravo_content {
+    padding-top: 20px;
+}
+.bravo_content .g-header .star-rate {
+    line-height: 16px;
+}.bravo_content .g-header .star-rate .fa-star {
+    color: #fa5636;
+    font-size: 15px;
+    position: relative;
+    margin-right: 3px;
+}.bravo_content .g-header h1 {
+    margin-top: 0;
+    color: #1A2B48;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 0;
+}.bravo_content .g-overview {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-top: solid 1px #D7DCE3;
+    padding-top: 20px;
+}.bravo_content h3 {
+    font-size: 1.5rem;
+} .bravo_form .field-icon,  .bravo_form .smart-search .parent_text,  .bravo_form .smart-search:after,  .bravo_form .dropdown-toggle:after,  .page-template-content .bravo-list-space .item-loop .service-review .rate,  .bravo_search_space .bravo_filter .g-filter-item .item-content .btn-more-item,  .bravo_detail_space .bravo_content .g-header .review-score .head .left .text-rating, .bravo-reviews .review-box .review-box-score .review-score, .bravo-reviews .review-box .review-box-score .review-score-base span,  .bravo_detail_tour .bravo_content .g-header .review-score .head .left .text-rating {
+    color: #000036;
+}.bravo_form .smart-search .parent_text,  .bravo_form .smart-search .form-control,  .bravo_form .input-search .parent_text,  .bravo_form .input-search .form-control {
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: #5191FA;
+    position: relative;
+    left: 0 !important;
+    padding: 0 !important;
+    height: 25px;
+    background: transparent;
+}
+.form-control {
+    border: 1px solid #DAE1E7;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 14px;
+}.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}.bravo_form .dropdown-toggle:after {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    color: #000036;
+    border-top: 0.4em solid;
+    border-right: 0.2em solid transparent;
+    border-left: 0.32em solid transparent;
+}.bravo_form .smart-search .bravo-autocomplete, .bravo_form .input-search .bravo-autocomplete {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    position: absolute;
+    background: #fff;
+    padding: 0;
+    top: 100%;
+    margin-top: 15px;
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: solid 1px #dee2e6;
+    z-index: 20;
+    max-height: 300px;
+    overflow-y: auto;
+    right: -15px;
+}.bravo_form .smart-search:after, .bravo_form .input-search:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 62px;
+    color: #5191fa;
+    border-top: 0.4em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+}
+
+.bravo_content .g-overview .description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #5E6D77;
+    font-weight: 400;
+    position: relative;
+}.owner-info {
+    background: #FFF;
+    border-radius: 3px;
+    padding: 15px;
+    border: 1px solid #D7DCE3;
+}.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}.owner-info .media-left {
+    padding-right: 10px;
+}.media-body {
+    -ms-flex: 1;
+    flex: 1;
+}.owner-info .media-left a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.owner-info .media-heading {
+    font-weight: 500;
+    font-size: 14px;
+    color: #1a2b48;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}.owner-info p {
+    margin-bottom: 5px;
+    color: #5E6D77;
+    font-size: 12px;
+}.owner-info .media-heading a {
+    color: inherit;
+}a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}img {
+    vertical-align: middle;
+    border-style: none;
+}.bravo_form {
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}.bravo_form .form-group {
+    margin-bottom: 0;
+}.bravo_form .form-content2 {
+    position: relative;
+    padding: 20px 0 10px 0px;
+    transition: all 0.3s;
+}label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}.bravo_form .smart-search,  .bravo_form .field-icon,  .bravo_form .smart-search .parent_text,  .bravo_form .smart-search:after,  .bravo_form .dropdown-toggle:after,  .page-template-content .bravo-list-space .item-loop .service-review .rate,  .bravo_search_space .bravo_filter .g-filter-item .item-content .btn-more-item,  .bravo_detail_space .bravo_content .g-header .review-score .head .left .text-rating, .bravo-reviews .review-box .review-box-score .review-score, .bravo-reviews .review-box .review-box-score .review-score-base span,  .bravo_detail_tour .bravo_content .g-header .review-score .head .left .text-rating {
+    color: #000036;
+}.bravo_form .smart-search .parent_text,  .bravo_form .smart-search .form-control,  .bravo_form .input-search .parent_text,  .bravo_form .input-search .form-control {
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: #5191FA;
+    position: relative;
+    left: 0 !important;
+    padding: 0 !important;
+    height: 25px;
+    background: transparent;
+}
+.btn.btn-primary{
+    background: #000036;
+} .bravo_content h3 {
+    font-size: 1.5rem;
+}.hotel_rooms_form .heading-section {
+    margin: 20px 0px;
+} .bravo_content h3 {
+    font-size: 1.5rem;
+}.heading-section {
+    margin: 20px 0px;
+}.hotel_rooms_form .nav-enquiry {
+    background: #F9F9F9;
+    padding: 20px;
+    border-bottom: solid 1px #d7dce3;
+    display: flex;
+    border-top: solid 5px #5191fa;
+    border-left: solid 1px #d7dce3;
+    border-right: solid 1px #d7dce3;
+}.hotel_rooms_form .nav-enquiry .enquiry-item {
+    flex: 0 0 50%;
+    text-align: center;
+}.hotel_rooms_form .nav-enquiry .enquiry-item.active span {
+    border-bottom: solid 1px #5191FA;
+    color: #5191FA;
+}.hotel_rooms_form .nav-enquiry .enquiry-item span {
+    color: #1a2b4e;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: solid 1px transparent;
+    cursor: pointer;
+}.hotel_rooms_form .form-search-rooms {
+    border: 1px solid #D7DCE3;
+    border-bottom: 5px solid #5191FA;
+    margin-bottom: 25px;
+}.hotel_rooms_form .form-search-rooms {
+    border-bottom-color: #000036;
+}.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}.hotel_rooms_form .form-search-rooms .form-search-row > div {
+    border-right: 1px solid #D7DCE3;
+}.hotel_rooms_form .form-search-rooms .form-search-row > div .form-group {
+    position: relative;
+    margin-bottom: 0px;
+    cursor: pointer;
+}.hotel_rooms_form .form-search-rooms .form-search-row > div .arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -5px;
+    font-size: 22px;
+    color: #A0A9B2;
+}.hotel_rooms_form .form-search-rooms .form-search-row > div .form-group .start_date {
+    position: absolute;
+    bottom: -5px;
+    left: -15px;
+    right: -15px;
+}.hotel_rooms_form .form-search-rooms .form-search-row .g-button-submit {
+    height: 100%;
+    display: flex;
+    width: 100%;
+}.hotel_rooms_form .form-search-rooms .form-search-row .g-button-submit .btn {
+    flex-grow: 1;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    margin-right: -1px;
+}.btn {
+    border: none !important;
+    box-shadow: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: background 0.2s, color 0.2s;
+    font-size: 14px;
+    font-weight: 500;
+}.hotel_rooms_form .form-search-rooms .form-search-row > div .form-group .form-content {
+    padding: 15px;
+}
+
+
+
+
+.bravo_form .input-search {
+    position: relative;
+} .bravo_form .field-icon,  .bravo_form .smart-search .parent_text,  .bravo_form .smart-search:after,  .bravo_form .dropdown-toggle:after,  .page-template-content .bravo-list-space .item-loop .service-review .rate,  .bravo_search_space .bravo_filter .g-filter-item .item-content .btn-more-item,  .bravo_detail_space .bravo_content .g-header .review-score .head .left .text-rating, .bravo-reviews .review-box .review-box-score .review-score, .bravo-reviews .review-box .review-box-score .review-score-base span,  .bravo_detail_tour .bravo_content .g-header .review-score .head .left .text-rating {
+    color: #000036;
+}.bravo_form .smart-search .parent_text,  .bravo_form .smart-search .form-control,  .bravo_form .input-search .parent_text,  .bravo_form .input-search .form-control {
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: #5191FA;
+    position: relative;
+    left: 0 !important;
+    padding: 0 !important;
+    height: 25px;
+    background: transparent;
+}
+
+
+.bravo_form .smart-search .parent_text[readonly],  .bravo_form .field-icon,  .bravo_form .smart-search .parent_text,  .bravo_form .smart-search:after,  .bravo_form .dropdown-toggle:after,  .page-template-content .bravo-list-space .item-loop .service-review .rate,  .bravo_search_space .bravo_filter .g-filter-item .item-content .btn-more-item,  .bravo_detail_space .bravo_content .g-header .review-score .head .left .text-rating, .bravo-reviews .review-box .review-box-score .review-score, .bravo-reviews .review-box .review-box-score .review-score-base span,  .bravo_detail_tour .bravo_content .g-header .review-score .head .left .text-rating {
+    color: #000036;
+}.bravo_form .smart-search .parent_text,  .bravo_form .smart-search .form-control,  .bravo_form .input-search .parent_text,  .bravo_form .input-search .form-control {
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: #5191FA;
+    position: relative;
+    left: 0 !important;
+    padding: 0 !important;
+    height: 25px;
+    background: transparent;
+}
+
+
+.bravo_form .smart-search .form-control[readonly],  .bravo_form .field-icon,  .bravo_form .smart-search .parent_text,  .bravo_form .smart-search:after,  .bravo_form .dropdown-toggle:after,  .page-template-content .bravo-list-space .item-loop .service-review .rate,  .bravo_search_space .bravo_filter .g-filter-item .item-content .btn-more-item,  .bravo_detail_space .bravo_content .g-header .review-score .head .left .text-rating, .bravo-reviews .review-box .review-box-score .review-score, .bravo-reviews .review-box .review-box-score .review-score-base span,  .bravo_detail_tour .bravo_content .g-header .review-score .head .left .text-rating {
+    color: #000036;
+}.bravo_form .smart-search .parent_text,  .bravo_form .smart-search .form-control,  .bravo_form .input-search .parent_text,  .bravo_form .input-search .form-control {
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: #5191FA;
+    position: relative;
+    left: 0 !important;
+    padding: 0 !important;
+    height: 25px;
+    background: transparent;
+}
+
+
+.bravo_form .input-search .parent_text[readonly],  .bravo_form .field-icon,  .bravo_form .smart-search .parent_text,  .bravo_form .smart-search:after,  .bravo_form .dropdown-toggle:after,  .page-template-content .bravo-list-space .item-loop .service-review .rate,  .bravo_search_space .bravo_filter .g-filter-item .item-content .btn-more-item,  .bravo_detail_space .bravo_content .g-header .review-score .head .left .text-rating, .bravo-reviews .review-box .review-box-score .review-score, .bravo-reviews .review-box .review-box-score .review-score-base span,  .bravo_detail_tour .bravo_content .g-header .review-score .head .left .text-rating {
+    color: #000036;
+}.bravo_form .smart-search .parent_text,  .bravo_form .smart-search .form-control,  .bravo_form .input-search .parent_text,  .bravo_form .input-search .form-control {
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: #5191FA;
+    position: relative;
+    left: 0 !important;
+    padding: 0 !important;
+    height: 25px;
+    background: transparent;
+}
+
+
+.bravo_form .input-search .form-control[readonly] {
+    cursor: pointer;
+}.bravo_form .form-content {
+    position: relative;
+    padding: 20px 0 10px 55px;
+    transition: all 0.3s;
+}.bravo_form .form-content .form-date-search-hotel .check-in-out {
+    position: absolute;
+    left: -15px;
+    bottom: 1px;
+    z-index: -1;
+    opacity: 0;
+}.bravo_form .form-content .date-wrapper .check-in-wrapper label {
+    display: block;
+}.bravo_form .form-content label {
+    font-size: 14px;
+    color: #5E6D77;
+    font-weight: 400;
+    margin-bottom: 0px;
+}.bravo_form .form-content .date-wrapper .check-in-wrapper .check-in-render, .bravo_form .form-content .date-wrapper .check-in-wrapper .check-out-render {
+    display: inline-block;
+    width: auto;
+}.bravo_form .form-content .date-wrapper .check-in-wrapper span {
+    color: #5E6D77;
+    position: relative;
+    top: -7px;
+}.bravo_form .form-content .date-wrapper .check-in-wrapper .check-out-render {
+    display: inline-block;
+    width: auto;
+}.bravo_form .form-content .date-wrapper .check-in-wrapper .check-in-render, .bravo_form .form-content .date-wrapper .check-in-wrapper .check-out-render {
+    display: inline-block;
+    width: auto;
+}.bravo_content .g-all-attribute.is_pc {
+    display: block;
+}
+.bravo_content .g-header {
+    margin-bottom: 10px;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    justify-content: space-between;
+}.bravo_content .g-header .right {
+    min-width: 230px;
+}.bravo_content .g-header .star-rate {
+    line-height: 16px;
+}.bravo_content .g-header h1 {
+    margin-top: 0;
+    color: #1A2B48;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 0;
+}.bravo_content .g-header .right {
+    min-width: 230px;
+}.bravo_content .g-header .review-score .head {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 22px;
+    color: #1a2b48;
+    font-weight: 400;
+    line-height: 25px;
+    justify-content: flex-end;
+}.bravo_content .g-header .review-score .foot {
+    color: #5E6D77;
+    font-size: 14px;
+    text-align: right;
+}.bravo_content .g-header .review-score .head .left {
+    text-align: right;
+}
+
+.bravo_content .g-header .review-score .head .score {
+    background: #000036;
+}.bravo_content .g-header .review-score .head .score {
+    position: relative;
+    float: right;
+    margin-left: 20px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    min-height: 45px;
+}.bravo_content .g-header .review-score .head .left .head-rating {
+    display: block;
+    line-height: 13px;
+    margin-top: 8px;
+}.bravo_content .g-header .review-score .head .left .text-rating {
+    color: #000036;
+}.bravo_content .g-header .review-score .head {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 22px;
+    color: #1a2b48;
+    font-weight: 400;
+    line-height: 25px;
+    justify-content: flex-end;
+}.bravo_content .g-header .review-score .head .score span {
+    font-size: 14px;
+    color: #FFF;
+}.bravo_content .g-header .review-score .foot {
+    color: #5E6D77;
+    font-size: 14px;
+    text-align: right;
+}
+
+.hotel_rooms_form .hotel_list_rooms {
+    border: 1px solid #d7dce3;
+}.hotel_rooms_form .hotel_list_rooms .room-item:last-child {
+    border-bottom: 1px solid #D7DCE3;
+}.hotel_rooms_form .hotel_list_rooms .room-item {
+    border: 1px solid #D7DCE3;
+    border-bottom: 0px;
+    margin: -1px;
+}.hotel_rooms_form .hotel_list_rooms .room-item .image {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}.hotel_rooms_form .hotel_list_rooms .room-item .hotel-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}.hotel_rooms_form .hotel_list_rooms .room-item .hotel-info .room-name {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #1A2B48;
+    font-weight: 500;
+    margin-top: 0px;
+    cursor: pointer;
+} .bravo_content h3 {
+    font-size: 1.5rem;
+}.hotel_rooms_form .hotel_list_rooms .room-item .hotel-info .room-meta {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}.hotel_rooms_form .hotel_list_rooms .room-item .hotel-info .room-meta li {
+    display: inline-block;
+    padding-right: 10px;
+}.hotel_rooms_form .hotel_list_rooms .room-item .hotel-info .room-meta li .item {
+    color: #5E6D77;
+}.hotel_rooms_form .hotel_list_rooms .room-item .hotel-info .room-meta li .item .field-icon {
+    text-align: center;
+    border: 1px solid #EAEEF3;
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-size: 22px;
+    margin-right: 0;
+    line-height: normal;
+    width: 40px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}[class*=" icofont-"], [class^=icofont-] {
+    font-family: IcoFont!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    line-height: 1;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}.hotel_rooms_form .hotel_list_rooms .room-item .hotel-info .room-meta li .item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}sup {
+    top: -0.5em;
+}sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}.hotel_rooms_form .room-attribute-item ul {
+    list-style: none;
+    margin-top: 10px;
+}.hotel_rooms_form .room-attribute-item ul li {
+    font-size: 15px;
+    margin-right: 7px;
+    display: inline-block;
+}.hotel_rooms_form .room-attribute-item ul li i {
+    width: 30px;
+    height: 28px;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #EAEEF3;
+    border-radius: 4px;
+    display: block;
+}.bravo_content .g-rules {
+    margin-top: 30px;
+}
+.bravo_content .g-rules {
+    margin-top: 30px;
+}.bravo_content .bravo-hr {
+    width: 100%;
+    height: 1px;
+    background: #EAEEF3;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}.bravo_content .g-rules h3 {
+    margin-bottom: 20px;
+}.bravo_content h3 {
+    font-size: 1.5rem;
+}.bravo_content .g-rules .description {
+    margin-top: 5px;
+}.bravo_content .g-rules .row {
+    margin-bottom: 15px;
+}.bravo_content .g-rules .key {
+    font-size: 14px;
+    color: #5E6D77;
+}.bravo_content .g-rules .value {
+    font-size: 14px;
+    color: #5E6D77;
+}.bravo_detail_hotel .bravo_content h3 {
+    font-size: 1.5rem;
+}.bravo-reviews .review-box {
+    margin-top: 20px;
+    padding: 30px;
+    border: 1px solid #EAEEF3;
+    border-radius: 5px;
+    color: #1A2B48;
+    font-weight: 500;
+}.bravo-reviews .review-box .review-box-score {
+    border-right: 1px solid #D7DCE3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}.bravo-reviews .review-box .review-box-score .review-score {
+    line-height: 50px;
+    font-size: 72px;
+    font-weight: 500;
+    color: #000036;
+}.bravo-reviews .review-box .review-box-score .review-score .per-total {
+    font-size: 24px;
+}.bravo-reviews .review-box .review-box-score .review-score-text {
+    font-weight: 400;
+    font-size: 24px;
+    color: #1A2B48;
+}.bravo-reviews .review-box .review-box-score .review-score-base {
+    margin-top: 10px;
+    color: #768090;
+    font-size: 14px;
+}.bravo-reviews .review-box .review-box-score .review-score-base span {
+    color: #000036;
+}.bravo-reviews .review-box .review-sumary .item:first-child {
+    margin-top: 0px;
+}.bravo-reviews .review-box .review-sumary .item {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}.bravo-reviews .review-box .review-sumary .item .label {
+    width: 22%;
+    text-align: right;
+    margin-top: 0px;
+    margin-right: 3%;
+    position: relative;
+    display: block;
+    padding-left: 0;
+    color: #1A2B48;
+    font-size: 14px;
+    font-weight: 400;
+}.bravo-reviews .review-box .review-sumary .item .progress {
+    position: relative;
+    height: 8px;
+    width: 65%;
+    border-radius: 10px;
+    box-shadow: none;
+    background: #EEE;
+    margin-bottom: 0;
+    overflow: inherit;
+}.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}.bravo-reviews .review-box {
+    margin-top: 20px;
+    padding: 30px;
+    border: 1px solid #EAEEF3;
+    border-radius: 5px;
+    color: #1A2B48;
+    font-weight: 500;
+}.bravo-reviews .review-box .review-sumary .item .number {
+    width: 7%;
+    margin-left: 3%;
+}.bravo-reviews .review-box .review-sumary .item .progress .percent.green {
+    background: #2ECC71;
+}.bravo-reviews .review-box .review-sumary .item .progress .percent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    background: #5191FA;
+    border-radius: 10px;
+}.bravo-reviews .review-list {
+    margin-top: 30px;
+}.bravo-reviews .review-pag-wrapper {
+    overflow: hidden;
+    margin-top: 15px;
+}.bravo-reviews .review-message {
+    background: #f5f5f5;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border-left: solid 4px #5191fa;
+    margin-bottom: 15px;
+}.bravo-reviews .review-pag-wrapper .review-pag-text {
+    float: right;
+    font-size: 14px;
+    color: #5E6D77;
+    margin-top: 5px;
+    margin-right: 0;
+}a {
+    color: #000036 !important;
+    text-decoration: none !important;;
+    background-color: transparent;
+}
+
+
+
+
+/* footer */
+.bravo_footer .mailchimp {
+    padding-top: 65px;
+    padding-bottom: 40px;
+    background: #F5F5F5;
+}
+
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}.bravo_footer .mailchimp .media-left {
+    padding-right: 30px;
+} .bravo_footer .mailchimp .media-left i {
+    font-size: 80px;
+    top: -10px;
+    position: relative;
+}.media-body {
+    -ms-flex: 1;
+    flex: 1;
+} .bravo_footer .mailchimp .media-body .media-heading {
+    font-size: 24px !important;
+}.bravo_footer .mailchimp .media-body p {
+    font-size: 16px !important;
+    color: #5E6D77 !important;
+}.bravo_footer .mailchimp .subcribe-form {
+    position: relative;
+}input {
+    overflow: visible;
+}input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+} .bravo_footer .mailchimp .subcribe-form .form-control {
+    height: 55px;
+    line-height: 53px;
+    font-size: 14px;
+    box-shadow: none;
+    border-color: #D7DCE3;
+}.bravo_footer .mailchimp .subcribe-form .btn-submit {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 55px;
+    line-height: 55px;
+    color: #FFF;
+    background: #1a2b48;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}.fa-spinner {
+    display: none;
+}.fa-pulse {
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8);
+}
+
+.bravo_footer .main-footer {
+    margin: 20px 0;
+}
+
+.bravo_footer .copy-right {
+    border-top: 1px solid #EAEEF3;
+}.bravo_footer .copy-right .context {
+    position: relative;
+    padding: 40px 15px;
+}.bravo_footer .copy-right p {
+    margin-bottom: 0;
+}.bravo_footer .copy-right .context .f-visa {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}.bravo_footer .copy-right p {
+    margin-bottom: 0;
+}
