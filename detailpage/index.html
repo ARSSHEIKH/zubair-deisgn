@@ -19,25 +19,195 @@
 
     <div class="main">
 
-        <!-- navbar -->
-        <div class="navbar">
-            <div class="navbar-brand">
-                logo
-            </div>
-            <div id="link-group" class="link-group">
-                <ul>
-                    <li class="nav-link"><a href=""><span class="material-icons">home</span>Home</a></li>
-                    <li class="nav-link"><a href=""><span class="material-icons">info</span>About</a></li>
-                    <li class="nav-link"><a href=""><span class="material-icons">article</span>Work</a></li>
-                    <li class="nav-link"><a href=""><span class="material-icons">photo_library</span>Gallery</a></li>
-                    <li class="nav-link"><a href=""><span class="material-icons">contacts</span>Contact</a></li>
-                </ul>
-            </div>
-            <div class="mobile-btn">
-                <span onclick="menuOpen();" id="open" class="material-icons open">menu</span>
-                <span onclick="menuClose();" id="close" c class="material-icons close">close</span>
+        <!-- bravo_topbar -->
+        <div class="bravo_topbar">
+            <div class="container">
+                <div class="content">
+                    <div class="topbar-left">
+                        f
+                        contact@bookingfleet.com
+
+                    </div>
+                    <div class="topbar-right">
+                        <ul class="topbar-items">
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="is_login">
+                                    PKR
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu text-left width-auto">
+                                    <li>
+                                        <a href="https://bookingfleet.com/BookingFleet/public/hotel?start=06%2F01%2F2022&amp;end=06%2F02%2F2022&amp;date=2022-06-01+-+2022-06-02&amp;room=1&amp;adults=1&amp;children=0&amp;set_currency=eur"
+                                            class="is_login">
+                                            EUR
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://bookingfleet.com/BookingFleet/public/hotel?start=06%2F01%2F2022&amp;end=06%2F02%2F2022&amp;date=2022-06-01+-+2022-06-02&amp;room=1&amp;adults=1&amp;children=0&amp;set_currency=jpy"
+                                            class="is_login">
+                                            JPY
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://bookingfleet.com/BookingFleet/public/hotel?start=06%2F01%2F2022&amp;end=06%2F02%2F2022&amp;date=2022-06-01+-+2022-06-02&amp;room=1&amp;adults=1&amp;children=0&amp;set_currency=usd"
+                                            class="is_login">
+                                            USD
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://bookingfleet.com/BookingFleet/public/hotel?start=06%2F01%2F2022&amp;end=06%2F02%2F2022&amp;date=2022-06-01+-+2022-06-02&amp;room=1&amp;adults=1&amp;children=0&amp;set_currency=aed"
+                                            class="is_login">
+                                            AED
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="property-item">
+                                <a href="https://bookingfleet.com/BookingFleet/public/page/become-a-vendor#list"
+                                    class="list_your_property">List Your Property</a>
+                            </li>
+                            <li class="login-item">
+                                <a href="#login" data-bs-toggle="modal" data-bs-target="#login" class="login">Login</a>
+                            </li>
+                            <li class="signup-item">
+                                <a href="#register" data-bs-toggle="modal" data-bs-target="#register"
+                                    class="signup">Sign
+                                    Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- navbar -->
+        <div class="navbar bravo_header">
+            <div class="container">
+                <div class="content">
+                    <div class="header-left">
+                        <div class="navbar-brand">
+                            <a href="https://bookingfleet.com/BookingFleet/public" class="bravo-logo">
+                                <img src="https://bookingfleet.com/BookingFleet/public/uploads/0000/24/2021/08/31/sr.png"
+                                    alt="bookingfleet">
+                            </a>
+                        </div>
+                        <div id="link-group" class="link-group">
+                            <div id="bravo-menu" class="bravo-menu">
+                                <ul>
+                                    <li class="nav-link"><a href="#">Hotel</a>
+                                    </li>
+                                    <li class="nav-link"><a href="#">Car Rental</a>
+                                    </li>
+                                    <li class="nav-link"><a href="#">Flights</a>
+                                    </li>
+                                    <li class="nav-link"><a href="#">Rental Listing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bravo-menu-mobile active">
+                                <div class="user-profile">
+                                    <div class="b-close"><i class="icofont-scroll-left"></i></div>
+                                    <div class="avatar"></div>
+                                    <ul>
+                                        <li class="property-item">
+                                            <a href="https://bookingfleet.com/BookingFleet/public/page/become-a-vendor#list"
+                                                class="list_your_property">List Your Property</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://bookingfleet.com/BookingFleet/public/user/profile">
+                                                <i class="icofont-user-suited"></i> Hi, Front end Developer
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://bookingfleet.com/BookingFleet/public/user/profile">
+                                                <i class="icon ion-md-construct"></i> My profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://bookingfleet.com/BookingFleet/public/admin"><i
+                                                    class="icon ion-ios-ribbon"></i> Dashboard</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                onclick="event.preventDefault(); document.getElementById('logout-form-mobile').submit();">
+                                                <i class="fa fa-sign-out"></i> Logout
+                                            </a>
+                                            <form id="logout-form-mobile"
+                                                action="https://bookingfleet.com/BookingFleet/public/logout"
+                                                method="POST" style="display: none;">
+                                                <input type="hidden" name="_token"
+                                                    value="sft18TVu9Ya3cB6gsW4dm7aEKvyy7u3555DLLKI8">
+                                            </form>
+                                        </li>
+
+                                    </ul>
+                                    <ul class="multi-lang">
+                                        <li class="dropdown">
+                                            <a href="#" data-toggle="dropdown" class="is_login">
+                                                PKR
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-menu text-left width-auto">
+                                                <li>
+                                                    <a href="https://bookingfleet.com/BookingFleet/public/hotel?start=05%2F31%2F2022&amp;end=06%2F01%2F2022&amp;date=2022-05-31+-+2022-06-01&amp;room=1&amp;adults=1&amp;children=0&amp;set_currency=eur"
+                                                        class="is_login">
+                                                        EUR
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://bookingfleet.com/BookingFleet/public/hotel?start=05%2F31%2F2022&amp;end=06%2F01%2F2022&amp;date=2022-05-31+-+2022-06-01&amp;room=1&amp;adults=1&amp;children=0&amp;set_currency=jpy"
+                                                        class="is_login">
+                                                        JPY
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://bookingfleet.com/BookingFleet/public/hotel?start=05%2F31%2F2022&amp;end=06%2F01%2F2022&amp;date=2022-05-31+-+2022-06-01&amp;room=1&amp;adults=1&amp;children=0&amp;set_currency=usd"
+                                                        class="is_login">
+                                                        USD
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://bookingfleet.com/BookingFleet/public/hotel?start=05%2F31%2F2022&amp;end=06%2F01%2F2022&amp;date=2022-05-31+-+2022-06-01&amp;room=1&amp;adults=1&amp;children=0&amp;set_currency=aed"
+                                                        class="is_login">
+                                                        AED
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="multi-lang">
+                                    </ul>
+                                </div>
+                                <div class="g-menu" style="max-height: 608px;">
+                                    <ul class="main-menu menu-generated">
+                                        <li class=" depth-0"><a target=""
+                                                href="https://bookingfleet.com/BookingFleet/public/hotel">Hotels</a>
+                                        </li>
+                                        <li class=" depth-0"><a target=""
+                                                href="https://bookingfleet.com/BookingFleet/public/car">Car Rentals</a>
+                                        </li>
+                                        <li class=" depth-0"><a target="" href="flights">Flights</a></li>
+                                        <li class=" depth-0"><a target=""
+                                                href="https://bookingfleet.com/BookingFleet/public/space">Rental
+                                                Listing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-btn">
+                            <span onclick="menuOpen();" id="open" class="material-icons open">menu</span>
+                            <span onclick="menuClose();" id="close" c class="material-icons close">close</span>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <button class="bravo-more-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- bravo_detail_space -->
         <div class="bravo_detail_space">
@@ -357,7 +527,8 @@
                                     <div class="review-pag-text">No Review</div>
                                 </div>
                                 <div class="review-message">
-                                    You must <a href="#login" data-toggle="modal" data-target="#login">log in</a> to write review
+                                    You must <a href="#login" data-toggle="modal" data-target="#login">log in</a> to
+                                    write review
                                 </div>
 
                             </div>
@@ -511,9 +682,6 @@
             </div>
         </div>
 
-
-
-
         <!-- bravo_footer -->
         <div class="bravo_footer">
             <div class="mailchimp">
@@ -578,6 +746,141 @@
             </div>
         </div>
 
+
+        <!--Login Modal -->
+        <div class="modal login fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content relative">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Log In</h4>
+                        <span class="c-pointer" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="input-icon field-icon fa">
+                                <img src="https://bookingfleet.com/BookingFleet/public/images/ico_close.svg"
+                                    alt="close">
+                            </i>
+                        </span>
+                    </div>
+                    <div class="modal-body relative">
+                        <form class="bravo-form-login" method="POST"
+                            action="https://bookingfleet.com/BookingFleet/public/login">
+                            <input type="hidden" name="_token" value="AqMNP2IJ0YwGLe9sFdYqU7dRRuvx6UnXmshgzTcp">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" autocomplete="off"
+                                    placeholder="Email address">
+                                <i class="input-icon icofont-mail"></i>
+                                <span class="invalid-feedback error error-email"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" autocomplete="off"
+                                    placeholder="Password">
+                                <i class="input-icon icofont-ui-password"></i>
+                                <span class="invalid-feedback error error-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="d-flex justify-content-between">
+                                    <label for="remember-me" class="mb0">
+                                        <input type="checkbox" name="remember" id="remember-me" value="1"> Remember me
+                                        <span class="checkmark fcheckbox"></span>
+                                    </label>
+                                    <a href="https://bookingfleet.com/BookingFleet/public/password/reset">Forgot
+                                        Password?</a>
+                                </div>
+                            </div>
+                            <div class="error message-error invalid-feedback"></div>
+                            <div class="form-group">
+                                <button class="btn btn-primary form-submit" type="submit">
+                                    Login
+                                    <span class="spinner-grow spinner-grow-sm icon-loading" role="status"
+                                        aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="c-grey font-medium f14 text-center"> Do not have an account? <a href=""
+                                    data-target="#register" data-toggle="modal">Sign Up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- register Modal -->
+        <div class="modal register fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content relative">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Sign Up</h4>
+                        <span class="c-pointer" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="input-icon field-icon fa">
+                                <img src="https://bookingfleet.com/BookingFleet/public/images/ico_close.svg"
+                                    alt="close">
+                            </i>
+                        </span>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form bravo-form-register" method="post">
+                            <input type="hidden" name="_token" value="AqMNP2IJ0YwGLe9sFdYqU7dRRuvx6UnXmshgzTcp">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="first_name" autocomplete="off"
+                                            placeholder="First Name">
+                                        <i class="input-icon field-icon icofont-waiter-alt"></i>
+                                        <span class="invalid-feedback error error-first_name"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="last_name" autocomplete="off"
+                                            placeholder="Last Name">
+                                        <i class="input-icon field-icon icofont-waiter-alt"></i>
+                                        <span class="invalid-feedback error error-last_name"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="phone" autocomplete="off"
+                                    placeholder="Phone">
+                                <i class="input-icon field-icon icofont-ui-touch-phone"></i>
+                                <span class="invalid-feedback error error-phone"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" autocomplete="off"
+                                    placeholder="Email address">
+                                <i class="input-icon field-icon icofont-mail"></i>
+                                <span class="invalid-feedback error error-email"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" autocomplete="off"
+                                    placeholder="Password">
+                                <i class="input-icon field-icon icofont-ui-password"></i>
+                                <span class="invalid-feedback error error-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="term">
+                                    <input id="term" type="checkbox" name="term" class="mr5">
+                                    I have read and accept the <a href="" target="_blank">Terms and Privacy Policy</a>
+                                    <span class="checkmark fcheckbox"></span>
+                                </label>
+                                <div><span class="invalid-feedback error error-term"></span></div>
+                            </div>
+                            <div class="error message-error invalid-feedback"></div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary form-submit">
+                                    Sign Up
+                                    <span class="spinner-grow spinner-grow-sm icon-loading" role="status"
+                                        aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="c-grey f14 text-center">
+                                Already have an account?
+                                <a href="#" data-target="#login" data-toggle="modal">Log In</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -595,15 +898,18 @@
         let open_btn = document.getElementById("open");
         let close_btn = document.getElementById("close");
         let link_group = document.getElementById("link-group");
+
         function menuOpen() {
             open_btn.style.display = "none";
             close_btn.style.display = "block";
-            link_group.style.right = "0%";
+            link_group.style.left = "0%";
+            link_group.style.display = "block";
         }
         function menuClose() {
             open_btn.style.display = "block";
             close_btn.style.display = "none";
-            link_group.style.right = "-100%";
+            link_group.style.left = "-100%";
+            link_group.style.display = "block";
         }
     </script>
 </body>
